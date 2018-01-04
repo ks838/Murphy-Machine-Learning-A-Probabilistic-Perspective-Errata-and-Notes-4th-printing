@@ -1,0 +1,456 @@
+\documentclass[aps,preprint,a4]{revtex4-1}
+%\documentclass[aps,twocolumn,prb,a4]{revtex4}
+%\documentclass[aps,preprint]{jcp}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\newcommand{\stab}[1]{\begin{tabular}[c]{c}#1\end{tabular}}
+\newcommand{\doeps}[3]{\stab{\setlength{\epsfxsize}{#1}%
+   \setlength{\epsfysize}{#2}\epsffile{#3}}}
+\newcommand{\nl}{\nonumber \\}
+
+\begin{document}
+\title{Murphy-Machine-Learning-mathematical-errata}
+\author{Kai Song}\email{ks838@cam.ac.uk }
+\date{Jan, 2018}
+\maketitle
+@Author: \\
+         Kai Song, PhD candidate in quantum dynamics\\
+         ks838 at cam.ac.uk\\
+         The newly updated errata can be downloaded from my Github: \url{https://github.com/ks838}
+
+@Notes: \\
+        1. In this project, I listed the printing and mathematical typos I found in the 4th printing (the 5th, 6th are the same as the 4th printing). I wish this would be helpful for other readers. \\
+        2. A drawback, in my view, is that some of the notations and notes of the figures in the book tend to be explained not very clearly. The axes are often not labeled. 
+
+@Introduction to the book:\\
+        1. This is a great book, which I have spent a lot of effort on it. I think it has a similar style as the most famous  Course of Theoretical Physics by Landau and Lifshitz. \\
+        2. There is only one edition till now (Jan, 2018). As the author Kevin Murphy said (I emailed him), the 2nd edition would appear at the end of 2018. We believe the second edition would include more on deep learning and reinforcement learning.\\
+        3. website of this book: \url{http://www.cs.ubc.ca/~murphyk/MLbook/index.html}
+
+\section{Chap 1}
+Not found.
+\section{Chap 2}
+{\color{red}\textbf{2-1}}. Page 32, Section 2.2.5:
+
+I don't think the introduction of $f(x)$ is necessary. I mean, $f(x)$ in Eq. (2.20) and $p(x)$ in Eq.(2.21)
+are kind of confusing.
+
+{\color{red}\textbf{2-2}}. Page 45, Section 2.5.1
+
+'Covariances can be between 0 and infinity' should be 'Covariances can be between $(-\infty, \infty)$'.
+
+{\color{red}\textbf{2-3}}. Page 48, Section 2.5.1
+
+Figure 2.14(c) '$\alpha = (20,2,2)$' should be '$\alpha = (20,20,20)$.
+\section{Chap 3}
+{\color{red}\textbf{3-1}}. Page 74, Section 3.2.4, 2nd paragraph
+
+'so only 4 and 16 get ...' should be 'so only 4, 16 and 64 get ...'
+
+{\color{red}\textbf{3-2}}.  Page 81, Section 3.4, Eq. (3.37)
+
+$x\in S_{K}$ should be $\theta \in S_{K}$ 
+
+{\color{red}\textbf{3-3}}.  Page 84, Section 3.4.4.1, Eq. (3.52)
+
+17 should be 16
+
+{\color{red}\textbf{3-4}}.  Page 84, Section 3.4.4.1, Eq. (3.53)
+
+27 should be 26, and the last one $5/27$ should be $4/26$.
+
+{\color{red}\textbf{3-5}}.  Page 87, Section 3.5.2, Eq. (3.65)
+
+$d\theta_{jc}$ should be added.
+
+\section{Chap 4}
+{\color{red}\textbf{4-1}} Page 106, Section 4.2.2, Eq. (4.43)
+
+$x^{T}(\beta_{c^{\prime}}-\beta_{c})=\gamma_{c^{\prime}}-\gamma_{c}$
+should be
+ $x^{T}(\beta_{c}-\beta_{c^{\prime}})=\gamma_{c^{\prime}}-\gamma_{c}$
+
+{\color{red}\textbf{4-2}} Page 108, Section 4.2.4, Eq. (4.52)
+
+The rightmost, $\mathcal N(x|\mu_{c},\Sigma_{c})$ should be
+$\mathcal N(x_{i}|\mu_{c},\Sigma_{c})$
+
+{\color{red}\textbf{4-3}} at the end of Page 135, below Eq.(4.208)
+
+$\mu_{0}=\bar{x}$ should be $m_{0}=\bar{x}$
+
+\section{Chap 5}
+{\color{red}\textbf{5-1}} at the end of Page 154,Section 5.2.2, below Eq. (5.8)
+
+$(1-\alpha)/2$ should be $\alpha/2$
+
+{\color{red}\textbf{5-2}} Page 168, Section 5.4.2, in Eq. (5.52)
+
+$\left(\frac{d\log p(X|\phi)}{d\phi}\right)2$ should be
+$\left(\frac{d\log p(X|\phi)}{d\phi}\right)^{2}$ 
+
+{\color{red}\textbf{5-3}} Page 172, Section 5.4.4.1, Eq. (5.73)
+
+The rightmost $\rm Beta(\theta|50,20)$ should be
+$\rm Beta(\theta|30,20)$
+
+{\color{red}\textbf{5-4}} Page 182, Section 5.7.1.5, Eq.(5.109)
+
+in the middle, $[l(y,\delta(x)]$ should be $[L(y,\delta(x)]$ for consistence.
+
+
+\section{Chap 6}
+{\color{red}\textbf{6-1}} Page 205, Section 6.4.4.1, Eq.(6.45)
+
+$\omega\theta_{0}$ should be $\omega\theta^{*}$
+
+{\color{red}\textbf{6-2}} Page 218, Exercise 6.3
+
+A $]$ is left.
+
+
+\section{Chap 7}
+{\color{red}\textbf{7-1}} Page 221, Section 7.3.1, Eq. (7.11)
+
+The original one is chaotic, I just rewrote as
+\begin{equation}
+\frac{1}{2} \rm RSS(w) = \frac{1}{2}(y-Xw)^{T}(y-Xw) = \frac{1}{2}w^{T}(X^{T}X)w
+-w^{T}(X^{T}y) + \rm{w-free \;\; terms}\nl
+\end{equation}
+
+{\color{red}\textbf{7-2}} Page 228, Section 7.5.1, Eq. (7.32)
+
+$\frac{1}{N}$ should be deleted.
+
+{\color{red}\textbf{7-3}} Page 234, Section 7.6.1, below Eq. (7.59)
+
+3rd line under Eq. (7.59): the superscript $(s)$ is unnecessary. $\rm w^{(s)}$ should
+be $\rm w$.
+
+
+\section{Chap 8}
+{\color{red}\textbf{8-1}} Page 258, Section 8.4.2 Eq. (8.56)
+
+$N^{d}$ should be $N^{D}$.
+
+{\color{red}\textbf{8-2}} Page 277, Section 8.6.3.2 Eq. (8.115)
+
+$(z_{i}-m)(z_{i}-m)^{T}$ should be $(m_{c}-m)(m_{c}-m)^{T}$
+
+{\color{red}\textbf{8-3}} Page 279 Exercise 8.1 
+
+Line starts with 'Feature 56', 'max is 45.0, mean is 52.6' should be
+'max is 52.6, mean is 45.0 '.
+
+%{\color{red}\textbf{8-4}}
+
+
+\section{Chap 9}
+{\color{red}\textbf{9-1}} Page 286, Section 9.2.2.3 Eq.(9.22)
+
+$\exp{(\theta^{T}\phi(x))}$ should be $\exp{(\theta^{T}\phi(x)-A(\theta))}$
+
+{\color{red}\textbf{9-2}} Page 293, Section 9.3.1, below Eq.(9.80)
+
+$\mu = \rm sigm(\eta)$ should be $\eta = \rm sigm(\mu)$
+
+
+\section{Chap 10}
+{\color{red}\textbf{10-1}} Page 320, Section 10.2.5, under Eq.(10.18)
+$t>s$ should $t<s$.
+
+\section{Chap 11}
+{\color{red}\textbf{11-1}} Page 351, Section 11.4, Eq.(11.16)
+
+It should be
+\begin{equation}
+\rm NLL(\theta) \triangleq -\frac{1}{N} \log p(\mathcal D|\theta)\nl
+\end{equation}
+
+{\color{red}\textbf{11-2}} Page 360, Section 11.4.4, Eq. (11.56)
+
+$x_{it}=i$ should be $x_{it}=k$ .
+
+{\color{red}\textbf{11-3}} Page 372, Section 11.5.1, first paragraph,
+It should be $\rm argmax_{K}p(\mathcal D|K)$.
+
+
+\section{Chap 12}
+{\color{red}\textbf{12-1}} Page 384, Figure 12.1 is really annoying, which may need
+further explanation.
+
+{\color{red}\textbf{12-2}} Page 393, Section 12.2.2, below Eq. (12.37)
+It should be $\frac{1}{N}\sum_{i=1}^{N}x_{i}x_{i}^{T}$
+
+{\color{red}\textbf{12-3}} Page 397, Section 12.2.4, Theorem 12.2.2,
+
+'S' should be $\Sigma$.
+
+{\color{red}\textbf{12-4}} Page 397, Section 12.2.4, Theorem 12.2.2, Eq. (12.60)
+
+It should be
+\begin{equation}
+\log p(X|W,\sigma^{2}) = -\frac{N}{2}\left(\ln |C|-\frac{1}{2}\sum_{i=1}^{N}x_{i}^{T}C^{-1}x_{i}\right)
+=  -\frac{N}{2}\left(\ln |C|+\rm tr(C^{-1}\Sigma)\right)\nl
+\end{equation}
+
+{\color{red}\textbf{12-5}} Page 404, Section 12.4, around Eq.(12.74)
+
+There is an abused use of the subscript $j$ and $r$.
+
+\section{Chap 13}
+{\color{red}\textbf{13-1}} Page 434, Section 13.3.2, Eq.(13.43)
+
+It should be $f(W) = \rm RSS(W) + \lambda||W||_{1}$.
+
+
+\section{Chap 14}
+{\color{red}\textbf{14-1}} Page 483, Section 14.2.3, around Eq.(14.11)
+
+$U_{:j}$ should be $U_{:,j}$.
+
+{\color{red}\textbf{14-2}} Page 484, Section 14.2.5
+
+I think further explanation is needed for the parameters in Matern kernel.
+
+And ,the discussion of Ornstein-Uhlenbeck process on the next page may be confusing.
+The original one sounds like Wiener process.
+
+{\color{red}\textbf{14-3}} Page 499, Section 14.5, in Figure 14.10
+
+An abused use of $\xi$. They should changed to $\xi^{+}$ and $\xi^{+}$ according to
+Eq. (14.50).
+
+{\color{red}\textbf{14-4}}
+
+
+\section{Chap 15}
+{\color{red}\textbf{15-1}} Page 537, Section 15.4.5, above Eq. (15.92)
+
+$\mathcal N(\nu_{j}|0,\sigma_{\omega}^{2})$ should be $\mathcal N(\nu_{j}|0,\sigma_{\nu}^{2})$
+
+
+\section{Chap 16}
+{\color{red}\textbf{16-1}} Page 549, Section 16.2.2.2, Eq.(16.9)
+
+It should be $y_{i} \neq \hat{y}_{c}$
+
+{\color{red}\textbf{16-2}} Page 550, Section 16.2.2.2, under Eq.(16.14)
+
+$(1-\hat {\pi}_{c}$ should be $(1-\hat {\pi}_{c})$.
+
+
+\section{Chap 17}
+{\color{red}\textbf{17-1}} Page 599, Section 17.2.3.1, Eq. (17.23)
+
+The first term $\pi_{1}(1-A_{12}-A_{12})$ should be $\pi_{1}(1-A_{12}-A_{13})$.
+
+{\color{red}\textbf{17-2}} Page 614, Section 17.4.3.2, In Eq. (17.66)
+
+$\phi_{t+1}(j)\beta_{t+1}(j)\psi(i,j)$ should be $\psi_{t+1}(j)\beta_{t+1}(j)\Psi(i,j)$.
+
+Please refer to the paragraph below Eq.(17.48) for their definitions.
+
+{\color{red}\textbf{17-3}} Page 614, Section 17.4.3.2, In Eq. (17.67)
+
+$\phi_{t+1}$ should be $\psi_{t+1}$.
+
+{\color{red}\textbf{17-4}} Page 618 , above Section 17.4.4.5, in Fig 17.13
+
+Third line: 'Each state $z_{1}$, $z_{2}$, $z_{3}$' should be 'Each state $s_{1}$, $s_{2}$, $s_{3}$'
+
+
+\section{Chap 18}
+{\color{red}\textbf{18-1}} Page 635, Section 18.2.1, under Eq.(18.9)
+
+$\mathcal N(0,Q)$ should be $\mathcal N(0,Q_{t})$.
+
+{\color{red}\textbf{18-2}} Page 635, Section 18.2.1, in Eq.(18.11)
+
+The last term,
+\begin{equation}
+\left(\begin{array}{c}\delta_{1t} \\ \delta_{2t} \\ \delta_{3t} \\ \delta_{4t}\end{array}\right)\nl
+\end{equation}
+should be
+\begin{equation}
+\left(\begin{array}{c}\delta_{1t} \\ \delta_{2t} \end{array}\right)\nl
+\end{equation}
+
+{\color{red}\textbf{18-3}} Page 635, Section 18.2.1, under Eq.(18.11)
+
+$\mathcal N(0,R)$ should be $\mathcal N(0,R_{t})$.
+
+{\color{red}\textbf{18-4}} Page 640, Section 18.2.4.2, under Eq. (18.21)
+
+$a_{t}=a_{t-1}+b_{0}t$ should be $a_{t}=a_{t-1}+b_{0}$.
+
+{\color{red}\textbf{18-5}} Page 643, Section 18.3.1.2, in Eq. (18.30)
+
+$p(z_{t}|y_{1:t},u_{t})$ should be $p(z_{t}|y_{1:t},u_{1:t})$.
+
+{\color{red}\textbf{18-6}} Page 643, Section 18.3.1.2, in Eq. (18.39)
+
+Subsripts are missed. It should be
+\begin{equation}
+K_{t} = \Sigma_{t|t-1}C^{T}_{t}(C_{t}\Sigma_{t|t-1}C^{T}_{t}+R_{t})^{-1}
+=(\Sigma_{t|t-1}^{-1} + C^{T}_{t}R_{t}C_{t})^{-1}C^{T}_{t}R^{-1}_{t}\nl
+\end{equation}
+
+{\color{red}\textbf{18-7}} Page 644, Section 18.3.1.4, in Eqs. (18.42-43)
+
+$C$ should be $C_{t}$.
+
+\section{Chap 19}
+{\color{red}\textbf{19-1}} Page 671, Section 19.4.1, following Eq. (19.19)
+
+It's said 'where $\theta=(\rm W,b)$'. But there's no $\theta$. 
+Maybe the probability appeared around can be rewritten as conditioned on $\theta$.
+
+{\color{red}\textbf{19-2}} Page 674, Section 19.4.4, in Eq. (19.28)
+
+An explanation for $y_{-(st}$ is needed here.
+
+{\color{red}\textbf{19-3}} Page 680, Section 19.5.2, under Eq.(19.46)
+
+In the 1st line below  Eq.(19.46), $\sum_{h_{i}}\tilde p(y_{i},h_{i}|\theta)$ should be
+$\sum_{h}\tilde p(y_{i},h|\theta)$, to be consistent.
+
+{\color{red}\textbf{19-4}} Page 682, Section 19.5.5, Algorithm 19.1
+
+It's better to use the same notations as in Eq.(19.51): B to be $N$, $\hat E$ to be $\mathbb E$.
+
+\section{Chap 20}
+{\color{red}\textbf{20-1}} Page 710? Section 20.2.1, above Eq. (20.2)
+
+$m_{u\rightarrow t}(x_{t})$ should be $m^{-}_{u\rightarrow t}(x_{t})$.
+
+{\color{red}\textbf{20-2}} Page 715, Section 20.2.4.3, under Eq.(20.37)
+
+2nd line following Eq.(20.37): $\phi_{t+1}$ should be $\psi_{t+1}$.
+
+{\color{red}\textbf{20-3}} Page 720,  Section20.3.2, Table 20.3
+
+In the 1st line, $\psi_{L}(L,)$ should be $\psi_{L}(L,G)$.
+
+{\color{red}\textbf{20-4}} Page 727, Section 20.4.2.1, in Eq. (20.69)
+
+A ')' is left on the rightmost.
+
+
+
+
+\section{Chap 21}
+{\color{red}\textbf{21-1}} Page 738, Section 21.3, in Eq. (21.26) 
+
+$q(x_{1})$ should be $q_{1}(x_{1})$.
+
+{\color{red}\textbf{21-2}} Page 740, Section 21.3.2, in Eq. (21.41)
+
+The $-$ should be $+$.
+
+{\color{red}\textbf{21-3}} Page 761, Section 21.8.2.1, in Eqs. (21.168-170)
+
+$p(\rm w|\mathcal D)$ should be $p(\rm w)$.
+
+{\color{red}\textbf{21-4}} Page 762, Section 21.8.2.1, in Eq. (21.176) and Eq. (21.179)
+
+$V_{n}$ should be $V_{N}$.
+
+{\color{red}\textbf{21-5}} Page 762, Section 21.8.2.1, in Algorithm 21.1, line 8
+
+$\rm reshape(m,M,N)$ should be $\rm reshape(\psi,M,N)$.
+
+
+
+
+\section{Chap 22}
+{\color{red}\textbf{22-1}} Page 784, Section 22.3.5.4? under Eq. (22.44)
+
+1st following Eq. (22.44), $\sum_{x_{t}}\tau(x_{s},x_{t})$ should be $\sum_{x_{t}}\tau_{st}(x_{s},x_{t})$.
+
+{\color{red}\textbf{22-2}} Page 803, Section 22.6.3.1, in Eq. (22.151)
+
+$\lambda_{st}$ should be $\lambda_{u,v}$ to be consistent with the followings.
+
+{\color{red}\textbf{22-3}} Page , Section 
+
+{\color{red}\textbf{22-4}} Page , Section 
+
+
+\section{Chap 23}
+Not found.
+%{\color{red}\textbf{23-1}} Page , Section 
+
+%{\color{red}\textbf{23-2}} Page , Section 
+
+
+
+\section{Chap 24}
+{\color{red}\textbf{24-1}} Page 841, Section 24.2.2, in Eq.(24.2)
+
+In the denominator, $s_{t}$ should be $x_{t}$.
+
+{\color{red}\textbf{24-2}} Page 841, Section 24.2.2, under Eq.(24.4)
+
+$x_{t}$ should be $x_{s}$.
+
+{\color{red}\textbf{24-3}} Page 871, Section 24.6, in Figure (24.17) b
+
+$T = 0.5$ should be $T = 0.2$.
+
+
+\section{Chap 25}
+{\color{red}\textbf{25-1}} Page 883, Section 25.2, Figure 25.3
+
+Figure 25.3 is chaotic. It seems the six subplots should be arranged to be a $2 \times 3$ matrix, instead of
+being a $3 \times 2$.
+
+
+\section{Chap 26}
+Not found.
+%{\color{red}\textbf{26-1}} Page , Section 
+
+%{\color{red}\textbf{26-2}} Page , Section 
+
+
+
+\section{Chap 27}
+{\color{red}\textbf{27-1}} Page 959, Section 27.3.4, in Eq. (27.31)
+
+$(z_{il}=k)$ should be $(q_{il}=k)$.
+
+{\color{red}\textbf{27-2}} Page 959, Section 27.3.4, in Eq. (27.32) 
+
+$(x_{il}=v, z_{il}=k)$ should be $(y_{il}=v, q_{il}=k)$.
+
+{\color{red}\textbf{27-3}} Page 960, Section 
+
+{\color{red}\textbf{27-4}} Page , Section 27.3.4, in Eq. (27.36)
+
+$\beta$ should be $\gamma$.
+
+{\color{red}\textbf{27-5}} Page 990, Section 27.7.1.2, in Eq. (27.107)
+
+$P(h_{k}=1|c,\theta)$ should be $P(h_{k}=1|\rm v,\theta)$.
+
+{\color{red}\textbf{27-6}} Page 992, Section 27.7.2.2, in Eq. (27.116)
+
+On the rightmost, $h_{r}$ should be $h_{k}$.
+
+\section{Chap 28}
+Not found.
+%{\color{red}\textbf{28-1}} Page , Section 
+
+%{\color{red}\textbf{28-2}} Page , Section 
+
+
+
+
+\end{document} 
